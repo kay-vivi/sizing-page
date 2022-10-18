@@ -7,54 +7,846 @@
     <title>Sizing Page</title>
     <style>
 
+* {
+  box-sizing: border-box;
+}
 
+body {
 
-.container {
+    font-family: raleway, sans-serif;
+    margin: 35px;
+}
+ .container {
      display: flex;
      flex-wrap: wrap;
      padding: 5px;
      justify-content: center;
      
 }
-.item {
-      margin: 5px; 
- 
-    
-}
 
-div {
+
+.item {
+  align-self: flex-start;
+  margin: 35px;
+}
+    
+
+
+ /* .heading {
     display: flex;
     flex-wrap: wrap;
     margin: 50px; 
     justify-content: flex-start;
-    flex-direction: column;
+    flex-direction: row;
 
 
+}  */
+
+
+
+
+.content {
+  padding:30px;
+  background:white;
+
+  line-height: 1.6;
 }
 
-.box {
-  display: flex;
-  flex-direction: row;
-  margin-left: 10%;
- flex-wrap: wrap;
- justify-content: flex-start;
- 
+h2 {
+  padding: 5px;
+  line-height: 1;
+  color: #4D858D;
+  margin-left: 20px;
+}
+
+
+
+.content img {
+   max-width:100%; 
+  /* float:left; */
+  margin-right: 10px;
+  justify-content: center;
+}
+
+h1 {
+  color: #4D858D;
+}
+
+
+
+
+/* table */
+
+.row {
+  /* display: flex; */
+  margin-left:-5px;
+  margin-right:-5px;
+
   
 }
 
+/* .column {
+  flex: 50%;
+  padding: 5px;
+} */
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+  margin-left: 25px;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px;
+ 
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+/* third table */
+/* sizing */
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 25px;
+    flex-wrap: wrap;
+}
+
+.flex-child {
+    flex: 1;
+  
+    text-align: center;
+    
+}  
+
+.flex-child:first-child {
+    margin-right: 10px;
+    margin-top: 45px;
+    margin-left:5%;
+    
+} 
+
+.woman {
+  margin-right: 45%;
+
+  
+}
+
+
+
+
+
+
+
     </style>
 </head>
+
+
 <body>
 
-   <div class="container">
-      <img class="item" src="images/sizing_header.jpg">
-   </div>
 
-   <div class="box">
-    <h1 class="item">Size Guide</h1>
-    <p class="item">Almost every item we sell is designed with four-way stretch fabric. This means there's quite a bit of latitude for selecting your size. If you like a fitted look or more compression, you may be able to size down. If you like a looser fit, select your normal size, or size up.</p>
-   </div>
+
+  </header> 
+
+  <div class="content">
     
+    <img src="images/sizing_header.jpg">
+    <h1>Size Guide</h1>
+
+    <p>Almost every item we sell is designed with four-way stretch fabric. This means there's quite a bit of latitude for selecting your size. If you like a fitted look or more compression, you may be able to size down. If you like a looser fit, select your normal size, or size up.</p>
+    
+
+  </div>
+
+<!-- table -->
+    
+
+<div class="row">
+  <div class="column">
+    <h2>Women's Sizing</h2>
+    <table>
+      <tr>
+        <th>Size</th>
+        <th>US Size</th>
+        <th>AU Size</th>
+        <th>Hip (in)</th>
+        <th>Waist (in)</th>
+        <th>Hip (cm)</th>
+        <th>Waist (cm)</th>
+      </tr>
+      <tr>
+        <td>XXS</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>XS</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>S</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>M</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+      <tr>
+        <td>L</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>XL</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+      <tr>
+        <td>XXL</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>XXXL</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>XXXL</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+      </tr>
+    </table>
+ </div>
+<div class="column"> 
+   <h2>Bra Sizing</h2>
+    <table>
+      <tr>
+        <th>Size</th>
+        <th>US Size</th>
+        <th>AU Size</th>
+        <th>Band (cm)</th>
+      </tr>
+      <tr>
+        <td>XS</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>S</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>M</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>L</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>XL</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>XXL</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>XXXL</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>XXXXL</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+
+
+<div class="flex-container">
+
+  <div class="flex-child text">
+  
+<h2>Measuring Tips</h2>
+<h3>Bust</h3>
+  <p>Measure just below the bust where the bra band sits. Measuring tape should be parallel to the floor.</p>
+  
+  <h3>Waist</h3>
+  <p>Measure at the belly button (also considered the natural waistline).</p>
+  
+  <h3>Hips</h3>
+  <p>Measure at the fullest part of the hips while standing with your feet together.</p>
+  
+  <h3>Inseam</h3>
+  <p>Measure on the inside of your leg from the pubic bone to your ankle</p>
+  </div>
+  
+  <div class="flex-child image">
+    <img src="images/sizing.png" class="woman"> 
+  </div>
+  
+</div>
+
+<!-- second table -->
+
+<div class="row">
+  <div class="column">
+    <h2>Women's Sizing</h2>
+    <table>
+      <tr>
+        <th>Size</th>
+        <th>US Size</th>
+        <th>AU Size</th>
+        <th>Hip (in)</th>
+        <th>Waist (in)</th>
+        <th>Hip (cm)</th>
+        <th>Waist (cm)</th>
+      </tr>
+      <tr>
+        <td>XXS</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>XS</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>S</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>M</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+      <tr>
+        <td>L</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>XL</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+      <tr>
+        <td>XXL</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>XXXL</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>XXXL</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+      </tr>
+    </table>
+ </div>
+<div class="column"> 
+   <h2>Bra Sizing</h2>
+    <table>
+      <tr>
+        <th>Size</th>
+        <th>US Size</th>
+        <th>AU Size</th>
+        <th>Band (cm)</th>
+      </tr>
+      <tr>
+        <td>XS</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>S</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>M</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>L</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>XL</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>XXL</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>XXXL</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>XXXXL</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<!-- Third table -->
+
+<div class="row">
+  <div class="column">
+    <h2>Women's Sizing</h2>
+    <table class="small">
+      <tr>
+        <th>Size</th>
+        <th>US Size</th>
+        <th>AU Size</th>
+        <th>Hip (in)</th>
+        <th>Waist (in)</th>
+        <th>Hip (cm)</th>
+        <th>Waist (cm)</th>
+      </tr>
+      <tr>
+        <td>XXS</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>XS</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>S</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>M</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+      <tr>
+        <td>L</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>XL</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+      <tr>
+        <td>XXL</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>XXXL</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>XXXL</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+      </tr>
+    </table>
+ </div>
+<div class="column"> 
+   <h2>Bra Sizing</h2>
+    <table>
+      <tr>
+        <th>Size</th>
+        <th>US Size</th>
+        <th>AU Size</th>
+        <th>Band (cm)</th>
+      </tr>
+      <tr>
+        <td>XS</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>S</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>M</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>L</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>XL</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>XXL</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>XXXL</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>XXXXL</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+        <td>50</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div class="column"> 
+  <h2>Bra Sizing</h2>
+   <table>
+     <tr>
+       <th>Size</th>
+       <th>US Size</th>
+       <th>AU Size</th>
+       <th>Band (cm)</th>
+     </tr>
+     <tr>
+       <td>XS</td>
+       <td>Smith</td>
+       <td>50</td>
+       <td>Jill</td>
+       <td>Smith</td>
+       <td>50</td>
+       <td>50</td>
+     </tr>
+     <tr>
+       <td>S</td>
+       <td>Smith</td>
+       <td>50</td>
+       <td>Jill</td>
+       <td>Smith</td>
+       <td>50</td>
+       <td>50</td>
+     </tr>
+     <tr>
+       <td>M</td>
+       <td>Smith</td>
+       <td>50</td>
+       <td>Jill</td>
+       <td>Smith</td>
+       <td>50</td>
+       <td>50</td>
+     </tr>
+     <tr>
+       <td>L</td>
+       <td>Smith</td>
+       <td>50</td>
+       <td>Jill</td>
+       <td>Smith</td>
+       <td>50</td>
+       <td>50</td>
+     </tr>
+     <tr>
+       <td>XL</td>
+       <td>Smith</td>
+       <td>50</td>
+       <td>Jill</td>
+       <td>Smith</td>
+       <td>50</td>
+       <td>50</td>
+     </tr>
+     <tr>
+       <td>XXL</td>
+       <td>Smith</td>
+       <td>50</td>
+       <td>Jill</td>
+       <td>Smith</td>
+       <td>50</td>
+       <td>50</td>
+     </tr>
+     <tr>
+       <td>XXXL</td>
+       <td>Smith</td>
+       <td>50</td>
+       <td>Jill</td>
+       <td>Smith</td>
+       <td>50</td>
+       <td>50</td>
+     </tr>
+     <tr>
+       <td>XXXXL</td>
+       <td>Smith</td>
+       <td>50</td>
+       <td>Jill</td>
+       <td>Smith</td>
+       <td>50</td>
+       <td>50</td>
+     </tr>
+   </table>
+ </div>
+</div>
+  
+
+
+
+  
+
     
 </body>
 </html>
