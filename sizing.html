@@ -59,33 +59,49 @@ h1 {
 
 /* table */
 
-.row {
+/* .row {
   /* display: flex; */
-  margin-left:-5px;
-  margin-right:-5px;
+  /* margin-left:-5px;
+  margin-right:-5px; */
 
   
-}
+/* } */
 
 /* .column {
   flex: 50%;
   padding: 5px;
 } */
 
-.column {
+/* .column {
   float: left;
   width: 50%;
   padding: 5px;
-}
+} */ 
 
+/* new code */
+.row {
+        display: flex;
+        margin-left: -5px;
+        margin-right: -5px;
+      }
 
+      .column {
+       flex: 0 0 50%;
+       padding: 5px;
+      }
+
+      .column {
+        float: left;
+        width: 35%;
+        padding: 5px;
+      }
 
 /* Clearfix (clear floats) */
-.row::after {
+/* .row::after {
   content: "";
   clear: both;
   display: table;
-}
+} */
 
 
 table {
@@ -171,7 +187,7 @@ tr:nth-child(even) {
 
   <div class="content">
     
-    <img src="images/header_sizing.jpg">
+    <img src="https://prodcdnus.myzyia.com/themes/zyia2/images/sizingPage_magento/header_sizing.jpg?width=700&height=500">
     <h1>Size Guide</h1>
 
     <p>Almost every item we sell is designed with four-way stretch fabric. This means there's quite a bit of latitude for selecting your size. If you like a fitted look or more compression, you may be able to size down. If you like a looser fit, select your normal size, or size up.</p>
@@ -197,82 +213,82 @@ tr:nth-child(even) {
       </tr>
       <tr>
         <td>XXS</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>Jill</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>50</td>
+        <td>0</td>
+        <td>4</td>
+        <td>33"</td>
+        <td>23"</td>
+        <td>84cm</td>
+        <td>58cm</td>
       </tr>
       <tr>
         <td>XS</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>Jill</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>50</td>
+        <td>2</td>
+        <td>6</td>
+        <td>34"</td>
+        <td>24"</td>
+        <td>86cm</td>
+        <td>61cm</td>
       </tr>
       <tr>
         <td>S</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>Jill</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>50</td>
+        <td>4</td>
+        <td>8</td>
+        <td>35"</td>
+        <td>25"</td>
+        <td>89cm</td>
+        <td>64cm</td>
       </tr>
       <tr>
         <td>M</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>Jill</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>50</td>
+        <td>6-8</td>
+        <td>10-12</td>
+        <td>36"</td>
+        <td>26"</td>
+        <td>91cm</td>
+        <td>66cm</td>
       <tr>
         <td>L</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>Jill</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>50</td>
+        <td>8-10</td>
+        <td>12-14</td>
+        <td>40"</td>
+        <td>27"</td>
+        <td>102cm</td>
+        <td>69cm</td>
       </tr>
       <tr>
         <td>XL</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>Jill</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>50</td>
+        <td>12</td>
+        <td>16</td>
+        <td>42"</td>
+        <td>32"</td>
+        <td>107cm</td>
+        <td>81cm</td>
       <tr>
         <td>XXL</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>Jill</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>50</td>
+        <td>14-16</td>
+        <td>18-20</td>
+        <td>44"</td>
+        <td>34"</td>
+        <td>112cm</td>
+        <td>86cm</td>
       </tr>
       <tr>
         <td>XXXL</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>Jill</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>50</td>
+        <td>16-18</td>
+        <td>20-22</td>
+        <td>46"</td>
+        <td>36"</td>
+        <td>117cm</td>
+        <td>91cm</td>
       </tr>
       <tr>
-        <td>XXXL</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>Jill</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>50</td>
+        <td>XXXXL</td>
+        <td>20</td>
+        <td>24</td>
+        <td>50"</td>
+        <td>40"</td>
+        <td>127cm</td>
+        <td>102cm</td>
       </tr>
     </table>
  </div>
@@ -287,75 +303,50 @@ tr:nth-child(even) {
       </tr>
       <tr>
         <td>XS</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>Jill</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>50</td>
+        <td>32A-32B</td>
+        <td>10A-10B</td>
+        <td>81cm</td>
       </tr>
       <tr>
         <td>S</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>Jill</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>50</td>
+        <td>32A-32B</td>
+        <td>10C-12A</td>
+        <td>81-86cm</td>
       </tr>
       <tr>
         <td>M</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>Jill</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>50</td>
+        <td>34A-36C</td>
+        <td>12A-14C</td>
+        <td>86-91cm</td>
       </tr>
       <tr>
         <td>L</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>Jill</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>50</td>
-      </tr>
+        <td>36C-38D</td>
+        <td>14C-16D</td>
+        <td>91-97cm</td>
       <tr>
         <td>XL</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>Jill</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>50</td>
+        <td>38D-38DD</td>
+        <td>16D-16DD</td>
+        <td>97cm</td>
       </tr>
       <tr>
         <td>XXL</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>Jill</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>50</td>
+        <td>38DD-40DD</td>
+        <td>16DD-18DD	</td>
+        <td>97-102cm</td>
       </tr>
       <tr>
         <td>XXXL</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>Jill</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>50</td>
+        <td>38F-40F</td>
+        <td>16F</td>
+        <td>102cm</td>
       </tr>
       <tr>
         <td>XXXXL</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>Jill</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>50</td>
+        <td>40F-42F</td>
+        <td>16F-18F</td>
+        <td>102-107cm</td>
       </tr>
     </table>
   </div>
@@ -394,92 +385,33 @@ tr:nth-child(even) {
     <h2>Leggings Fit by Line</h2>
     <table>
       <tr>
-        <th>Size</th>
-        <th>US Size</th>
-        <th>AU Size</th>
-        <th>Hip (in)</th>
-        <th>Waist (in)</th>
-        <th>Hip (cm)</th>
-        <th>Waist (cm)</th>
+        <th>Line</th>
+        <th>Fit</th>
+        <th>Compression</th>
       </tr>
       <tr>
-        <td>XXS</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>Jill</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>50</td>
+        <td>Light n Tight</td>
+        <td>True</td>
+        <td>Extreme</td>
       </tr>
       <tr>
-        <td>XS</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>Jill</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>50</td>
+        <td>Luxe</td>
+        <td>Size Down</td>
+        <td>Gentle</td>
       </tr>
       <tr>
-        <td>S</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>Jill</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>50</td>
+        <td>Brilliant</td>
+        <td>True</td>
+        <td>Moderate</td>
       </tr>
       <tr>
-        <td>M</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>Jill</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>50</td>
+        <td>Hero</td>
+        <td>True</td>
+        <td>Moderate</td>
       <tr>
-        <td>L</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>Jill</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>50</td>
-      </tr>
-      <tr>
-        <td>XL</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>Jill</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>50</td>
-      <tr>
-        <td>XXL</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>Jill</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>50</td>
-      </tr>
-      <tr>
-        <td>XXXL</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>Jill</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>50</td>
-      </tr>
-      <tr>
-        <td>XXXL</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>Jill</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>50</td>
+        <td>Ascend</td>
+        <td>Size Down	</td>
+        <td>Gentle</td>
       </tr>
     </table>
  </div>
@@ -487,82 +419,34 @@ tr:nth-child(even) {
    <h2>Bra Fit by Line</h2>
     <table>
       <tr>
-        <th>Size</th>
-        <th>US Size</th>
-        <th>AU Size</th>
-        <th>Band (cm)</th>
+        <th>Line</th>
+        <th>Fit</th>
+        <th>Support</th>
       </tr>
       <tr>
-        <td>XS</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>Jill</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>50</td>
+        <td>Bomber</td>
+        <td>True</td>
+        <td>Moderate</td>
       </tr>
       <tr>
-        <td>S</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>Jill</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>50</td>
+        <td>All Star</td>
+        <td>True</td>
+        <td>Heavy</td>
       </tr>
       <tr>
-        <td>M</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>Jill</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>50</td>
+        <td>Grid</td>
+        <td>Size up	</td>
+        <td>Light</td>
       </tr>
       <tr>
-        <td>L</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>Jill</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>50</td>
+        <td>Luxe Strappy	</td>
+        <td>Size down	</td>
+        <td>Moderate</td>
       </tr>
       <tr>
-        <td>XL</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>Jill</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>50</td>
-      </tr>
-      <tr>
-        <td>XXL</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>Jill</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>50</td>
-      </tr>
-      <tr>
-        <td>XXXL</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>Jill</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>50</td>
-      </tr>
-      <tr>
-        <td>XXXXL</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>Jill</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>50</td>
+        <td>Adjust. Mesh</td>
+        <td>Size down	</td>
+        <td>Moderate</td>
       </tr>
     </table>
   </div>
@@ -581,38 +465,38 @@ tr:nth-child(even) {
       </tr>
       <tr>
         <td>XS</td>
-        <td>Smith</td>
-        <td>50</td>
+        <td>28</td>
+        <td>71cm</td>
       </tr>
       <tr>
         <td>S</td>
-        <td>Smith</td>
-        <td>50</td>
+        <td>30-32</td>
+        <td>81cm</td>
       </tr>
       <tr>
         <td>M</td>
-        <td>Smith</td>
-        <td>50</td>
+        <td>34</td>
+        <td>86cm</td>
       </tr>
       <tr>
         <td>L</td>
-        <td>Smith</td>
-        <td>50</td>
+        <td>36</td>
+        <td>91cm</td>
       <tr>
         <td>XL</td>
-        <td>Smith</td>
-        <td>50</td>
+        <td>38</td>
+        <td>97cm</td>
         
       </tr>
       <tr>
         <td>XXL</td>
-        <td>Smith</td>
-        <td>50</td>
+        <td>40</td>
+        <td>102cm</td>
       </tr>
       <tr>
         <td>XXXL</td>
-        <td>Smith</td>
-        <td>50</td>
+        <td>42</td>
+        <td>107cm</td>
       </tr>
     </table>
  </div>
@@ -626,35 +510,35 @@ tr:nth-child(even) {
       </tr>
       <tr>
         <td>S</td>
-        <td>Smith</td>
-        <td>50</td>
+        <td>26-28</td>
+        <td>71cm</td>
       </tr>
       <tr>
         <td>M</td>
-        <td>Smith</td>
-        <td>50</td>
+        <td>28-30	</td>
+        <td>76cm</td>
       </tr>
       <tr>
         <td>L</td>
-        <td>Smith</td>
-        <td>50</td>
+        <td>30-32	</td>
+        <td>81cm</td>
       </tr>
       <tr>
         <td>XL</td>
-        <td>Smith</td>
-        <td>50</td>
+        <td>34</td>
+        <td>86cm</td>
       </tr>
       <tr>
         <td>XXL</td>
-        <td>Smith</td>
-        <td>50</td>
+        <td>36</td>
+        <td>91cm</td>
       </tr>
     </table>
   </div>
 </div>
 
 <div class="kids"> 
-  <h2>Kids Sizing</h2>
+  <h2>Kid's Sizing</h2>
    <table>
      <tr>
        <th>Size</th>
